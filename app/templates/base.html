@@ -1,16 +1,21 @@
 <html>
-    <head>
-        {% if title %}
-        <title>{{ title }} - Microblog</title>
-        {% else %}
-        <title>Welcome to Microblog</title>
-        {% endif %}
-    </head>
-    <body>
-        <!-- "Navbar" beginnings -->
-        <div>Microblog: <a href="/index">Home</a></div>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Microblog</title>
+    {% else %}
+    <title>Welcome to Microblog</title>
+    {% endif %}
+  </head>
+  <body>
+    <!-- "Navbar" beginnings -->
+    <div>
+      Microblog:
+      <a href="/index">Home</a>
+      <a href="/login">Login</a>
+    </div>
 
-        <!-- tells the page where to put the content when this is used as an inhereted template-->
-        {% block content %}{% endblock %}
-    </body>
-<html>
+    <!-- tells the page where to put the content when this is used as an inhereted template-->
+    {% block content %}{% endblock %}
+  </body>
+  <html></html>
+</html>
